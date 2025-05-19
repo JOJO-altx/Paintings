@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Painting</title>
+  <style>
+    body {
+      margin: 0;
+      background: #524747;
+      font-family: sans-serif;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .title {
+      margin: 20px 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .grid {
+      display: grid;
+      gap: 10px;
+      background: black;
+      padding: 10px;
+      margin-bottom: 50px;
+    }
+    .cell {
+      background: white;
+    }
+
+    /* Painting 1*/
+    .grid1 {
+      grid-template-columns: 200px 100px 150px;
+      grid-template-rows: 150px 100px 200px;
+    }
+    .blue { background: #0f4c81; }
+    .coral { background: #ff6f61; }
+    .gold { background: #ffb400; }
+    .mint { background: #98ff98; }
+
+    /* Painting 2 */
+    .grid2 {
+      grid-template-columns: 100px 100px 200px 150px;
+      grid-template-rows: 100px 200px 150px;
+    }
+    .hotpink { background: #ff69b4; }
+    .neon { background: #39ff14; }
+    .sky { background: #87ceeb; }
+    .steel { background: #4682b4; }
+
+    /* Painting 3*/
+    .grid3 {
+      grid-template-columns: 180px 120px 100px 180px;
+      grid-template-rows: 120px 180px 150px;
+    }
+    .clay { background: #b66e41; }
+    .sage { background: #9caf88; }
+    .sand { background: #d4b483; }
+    .charcoal { background: #36454f; }
+
+    /* Painting 4*/
+    .grid4 {
+      gap: 9px;
+      margin: 0;
+      padding-bottom: 80px;
+      margin-bottom: 50px;
+      display: grid;
+      height: 748px;
+      width: 748px;
+      background: black;
+      grid-template-columns: 414px 130px 155px 20px;
+      grid-template-rows: 320px 198px 153px 120px;
+    }
+    .item { background-color: #F0F1EC; }
+    .Red { background-color: #E72F24; }
+    .white1 { grid-column: span 3; }
+    .white2 { grid-row: span 2; }
+    .white3 { grid-area: 2 / 2 / 4 / 4; }
+    .white4 { grid-row: span 2; }
+    .blue {
+      background-color: #004592;
+      border-bottom: 10px solid #000;
+    }
+    .black { background-color: #232629; }
+    .yellow { background-color: #F9D01E; }
+  </style>
+</head>
+
+<body>
+  <div class="title">Painting 1</div>
+  <div class="grid grid1">
+    <div class="cell blue"></div>
+    <div class="cell coral"></div>
+    <div class="cell"></div>
+    <div class="cell gold"></div>
+    <div class="cell mint"></div>
+    <div class="cell"></div>
+    <div class="cell coral"></div>
+    <div class="cell"></div>
+    <div class="cell blue"></div>
+  </div>
+
+  <div class="title">Painting 2</div>
+  <div class="grid grid2">
+    <div class="cell hotpink"></div>
+    <div class="cell sky"></div>
+    <div class="cell neon"></div>
+    <div class="cell"></div>
+    <div class="cell steel"></div>
+    <div class="cell hotpink"></div>
+    <div class="cell"></div>
+    <div class="cell neon"></div>
+    <div class="cell sky"></div>
+    <div class="cell steel"></div>
+    <div class="cell"></div>
+    <div class="cell hotpink"></div>
+  </div>
+
+  <div class="title">Painting 3</div>
+  <div class="grid grid3">
+    <div class="cell clay"></div>
+    <div class="cell sage"></div>
+    <div class="cell sand"></div>
+    <div class="cell charcoal"></div>
+    <div class="cell"></div>
+    <div class="cell sage"></div>
+    <div class="cell"></div>
+    <div class="cell clay"></div>
+    <div class="cell sand"></div>
+    <div class="cell charcoal"></div>
+    <div class="cell sage"></div>
+    <div class="cell"></div>
+  </div>
+
+  <div class="title">Painting 4</div>
+  <div class="grid grid4">
+    <div class="Red item"></div>
+    <div class="white1 item"></div>
+    <div class="white2 item"></div>
+    <div class="white3 item"></div>
+    <div class="blue item"></div>
+    <div class="white4 item"></div>
+    <div class="item"></div>
+    <div class="yellow item"></div>
+    <div class="black item"></div>
+  </div>
+</body>
+</html>
